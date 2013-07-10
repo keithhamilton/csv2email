@@ -8,19 +8,19 @@ def generateEmail(email_batch_list,current_batch, total_batch_count,html_text,pl
     }
 
 
-    mail_server = SMTP('smtp-pdx.wk.com')
+    mail_server = SMTP('my-smtp-server.mydomain.com')
     
     # iterating through batch list
     for item in email_batch_list:
         to_address = item[0]
-        from_address = 'megan.a@wk.com'
+        from_address = 'me@mydomain.com'
         
         message_text_html = html_text.format(item[1])
         message_plain_text = plain_text.format(item[1])
 
         # create email object
         email = MIMEMultipart('alternative')
-        email['Subject'] = 'Can we cast you in a Dodge commercial?'
+        email['Subject'] = 'This is an awesome subject'
         email['From'] = from_address
         email['To'] = to_address
 
