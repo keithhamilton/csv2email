@@ -1,0 +1,9 @@
+<html>
+<head><head>
+<body>
+<p style="font-family:Helvetica,sans-serif;">Hey {0},</p><!-- name goes in {0} -->
+<p style="font-family:Helvetica,sans-serif;">This is my message.</p>
+<p style="font-family:Helvetica,sans-serif;">Thanks for reading,</p>
+<p style="font-family:Helvetica,sans-serif;">Me</p>
+</body>
+</html>
